@@ -1,2 +1,3 @@
 # RoyalOpticals
-Creating website using Vite
+# creating a website for royal opticals
+# Creating website using Vite
