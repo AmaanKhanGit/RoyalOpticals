@@ -107,6 +107,20 @@ li {
 }
 
 
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  /* Chrome, Safari, Android */
+  outline: none;
+  /* focus outline remove */
+  -webkit-user-select: none;
+  /* text select remove */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
 /* header section */
 
 header {
@@ -341,19 +355,5 @@ header {
 
   .nav-mobile {
     width: 50%;
-  }
-
-
-  /* Mobile specific highlight removal */
-  * {
-    -webkit-tap-highlight-color: transparent;
-    /* Chrome, Safari, Android */
-    outline: none;
-    /* focus outline remove */
-    -webkit-user-select: none;
-    /* text select remove */
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
 }
