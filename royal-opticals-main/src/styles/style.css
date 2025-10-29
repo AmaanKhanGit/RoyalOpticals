@@ -30,6 +30,7 @@ li {
   list-style: none;
 }
 
+/*& BUTTON STYLES */
 .btn {
   font-size: 24px;
   padding: 10px 15px;
@@ -44,9 +45,12 @@ li {
   background-color: var(--hoverColor);
 }
 
-.section {
-  padding: 80px 60px;
-  text-align: center;
+/*& HEADING & SMALL HEADING STYLES */
+.main-heading {
+  font-size: 62px;
+  margin-bottom: 40px;
+  color: var(--mainColor);
+  text-shadow: 5px 5px 5px rgba(12, 12, 12, 0.1);
 }
 
 .small-heading {
@@ -54,7 +58,13 @@ li {
   color: var(--mainColor);
 }
 
+.content-heading {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: var(--mainColor);
+}
 
+/*& OVERLAY */
 .overlay {
   position: fixed;
   top: 0;
@@ -63,30 +73,22 @@ li {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
-  /* hidden by default */
   z-index: 55;
-  /* menu ke neeche nahi hona chahiye */
+  /** menu ke neeche nahi hona chahiye index */
 }
 
 .overlay.active {
   display: block;
 }
 
-.content-heading {
-  font-size: 62px;
-  margin-bottom: 40px;
-  color: var(--mainColor);
-  text-shadow: 5px 5px 5px rgba(12, 12, 12, 0.1);
+/*& SECTION STYLES */
+.section {
+  padding: 80px 60px;
+  text-align: center;
 }
 
-/* universal selector for grid layout */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
 
-/* animation */
+/*& ANIMATION FOR APPEAR EFFECT */
 
 @keyframes appear {
   from {
@@ -106,8 +108,7 @@ li {
   animation-range: entry 0% cover 30%;
 }
 
-
-
+/*& DISABLE USER SELECT & BLUE HIGHLIGHT */
 * {
   -webkit-tap-highlight-color: transparent;
   /* Chrome, Safari, Android */
@@ -121,7 +122,7 @@ li {
 }
 
 
-/* header section */
+/*~ HEADER SECTION */
 
 header {
   display: flex;
@@ -209,7 +210,7 @@ header {
   cursor: pointer;
 }
 
-/* hero section */
+/*~ HERO SECTION */
 
 .hero {
   width: 100%;
@@ -245,23 +246,20 @@ header {
   color: var(--mainColor);
 }
 
-/* top brands section */
-
+/*~ top brands section */
 .topBrands {
   background-color: #efefef;
 }
 
-.brand-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+.top-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  place-items: center;
 }
 
 .img-container {
-  width: 250px;
-  height: 250px;
+  aspect-ratio: 1 / 1;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -283,7 +281,49 @@ header {
   object-fit: contain;
 }
 
-/* Responsive Design */
+/*~ WHY CHOOSE US SECTION */
+.head-wrapper {
+  max-width: 800px;
+  margin: 60px auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  place-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card-head {
+  font-size: 48px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.card-list li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #2e2e2eef;
+}
+
+/*~ RESPONSIVE DESIGN */
 
 @media (max-width: 1024px) {
   header {
@@ -327,8 +367,23 @@ header {
     padding: 100px 20px 40px;
   }
 
-  .content-heading {
+  .main-heading {
     font-size: 44px;
+  }
+}
+
+@media (max-width: 660px) {
+  .top-brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section {
+    padding: 60px 30px;
+  }
+
+  .content-heading {
+    font-size: 28px;
+    margin-bottom: 15px;
   }
 }
 

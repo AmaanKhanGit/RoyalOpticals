@@ -3,44 +3,24 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/Icons/favicon.ico" />
+  <link rel="" type="image/svg+xml" href="/s/fav.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="src/styles/style.css">
   <title>Royal Opticals | Kawardha</title>
 </head>
 
 <body>
-  <!-- HEADER & NAVIGATION -->
+  <!--~ HEADER & NAVIGATION -->
   <header id="header">
-    <div>
-      <h1 class="logo">Royal Opticals</h1>
-    </div>
-    <nav class="nav-cont">
-      <ul class="navigation">
-        <li><a href="">Home</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
-      </ul>
-      <img class="menuBar" src="/Icons/menu.svg" alt="">
-      <ul class="navigation nav-mobile">
-        <button class="btn closeBtn">Close</button>
-        <li><a class="nav-links" href="">Home</a></li>
-        <li><a class="nav-links" href="">Products</a></li>
-        <li><a class="nav-links" href="">About Us</a></li>
-        <li><a class="nav-links" href="">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div class="overlay"></div>
+    <!--& Header will be rendered here by JavaScript -->
   </header>
-
 
   <main>
 
-    <!-- HERO SECTION -->
+    <!--~ HERO SECTION -->
     <section class="hero">
       <div class="hero-content">
-        <h1 class="content-heading">Your Vision, Our Mission</h1>
+        <h1 class="main-heading">Your Vision, Our Mission</h1>
         <p style="display: flex; flex-direction: column; padding-bottom: 30px;">Discover a world of clarity
           <span>and</span> Style
           with Royal Opticals.
@@ -49,21 +29,75 @@
       </div>
     </section>
 
-    <!-- TOP BRANDS SECTION -->
+    <!--~ TOP BRANDS SECTION -->
     <section class="topBrands section">
-      <h1 class="content-heading">Top Brands</h1>
-      <div class="brand-container">
-        <div class="img-container animation"> <img src="/Images/Brands/Fastrack.png" alt="Fastrack"></div>
-        <div class="img-container animation"> <img src="/Images/Brands/Ray-Ban.png" alt="Ray-Ban"></div>
-        <div class="img-container animation"> <img src="/Images/Brands/titan.png" alt="Titan"></div>
-        <div class="img-container animation"> <img src="/Images/Brands/zeiss.png" alt="Zeiss"></div>
-        <div class="img-container animation"> <img src="/Images/Brands/velocity.png" alt="Velocity"></div>
-        <div class="img-container animation"> <img src="/Images/Brands/kodak.png" alt="Kodak"></div>
+      <h1 class="main-heading"><img src="/Icons/crown.svg" alt=""> Top Brands</h1>
+      <div class="top-brands-grid">
+        <!--& Brand logos will be rendered here by JavaScript -->
       </div>
+    </section>
+
+    <!--~ WHY CHOOSE US SECTION -->
+    <section class="why-choose-us section">
+      <h1 class="main-heading"> <img src="/Icons/diamond.svg" alt=""> Why Choose Us</h1>
+
+      <div class="card-grid grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-head">
+            <img src="/Icons/glass.svg" alt="glass">
+            <h3 class="content-heading">Expert Opticians</h3>
+          </div>
+          <ul class="card-list">
+            <li>☑️ Certified professionals for accurate eye testing</li>
+            <li>☑️ Modern tools for reliable vision results</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-head">
+            <img src="/Icons/premium.svg" alt="premium">
+            <h3 class="content-heading">Premium Brands</h3>
+          </div>
+          <ul class="card-list">
+            <li>☑️ 100% genuine frames and lenses</li>
+            <li>☑️ Brands: Ray-Ban, Titan Eye+, Fastrack, Vogue & more</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-head">
+            <img src="/Icons/price.svg" alt="price">
+            <h3 class="content-heading">Affordable Prices</h3>
+          </div>
+          <ul class="card-list">
+            <li>☑️ High-quality eyewear that fits your budget</li>
+            <li>☑️ Seasonal discounts and offers</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-head">
+            <img src="/Icons/trust.svg" alt="trust">
+            <h3 class="content-heading">Trust by Thousands</h3>
+          </div>
+          <ul class="card-list">
+            <li>☑️ 1,000+ happy customers trust Royal Opticals</li>
+            <li>☑️ Reliable service and long-term satisfaction</li>
+          </ul>
+        </div>
+
+      </div>
+
     </section>
   </main>
 
-  <script type="module" src="./src/scirpts/main.js"></script>
+  <footer></footer>
+  <script type="module" src="./src/scirpts/main.js" defer></script>
 </body>
 
 </html>
