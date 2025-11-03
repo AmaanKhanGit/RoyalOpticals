@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="" type="image/svg+xml" href="/s/fav.ico" />
+  <link rel="icon" type="image/svg+xml" href="/Icons/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="src/styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <title>Royal Opticals | Kawardha</title>
 </head>
 
@@ -31,7 +32,7 @@
 
     <!--~ TOP BRANDS SECTION -->
     <section class="topBrands section">
-      <h1 class="main-heading"><img src="/Icons/crown.svg" alt=""> Top Brands</h1>
+      <h1 class="main-heading">Top Brands</h1>
       <div class="top-brands-grid">
         <!--& Brand logos will be rendered here by JavaScript -->
       </div>
@@ -39,65 +40,70 @@
 
     <!--~ WHY CHOOSE US SECTION -->
     <section class="why-choose-us section">
-      <h1 class="main-heading"> <img src="/Icons/diamond.svg" alt=""> Why Choose Us</h1>
-
+      <h1 class="main-heading"> Why Choose Us</h1>
       <div class="card-grid grid">
-
-        <!-- Card 1 -->
-        <div class="card">
-          <div class="card-head">
-            <img src="/Icons/glass.svg" alt="glass">
-            <h3 class="content-heading">Expert Opticians</h3>
-          </div>
-          <ul class="card-list">
-            <li>☑️ Certified professionals for accurate eye testing</li>
-            <li>☑️ Modern tools for reliable vision results</li>
-          </ul>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <div class="card-head">
-            <img src="/Icons/premium.svg" alt="premium">
-            <h3 class="content-heading">Premium Brands</h3>
-          </div>
-          <ul class="card-list">
-            <li>☑️ 100% genuine frames and lenses</li>
-            <li>☑️ Brands: Ray-Ban, Titan Eye+, Fastrack, Vogue & more</li>
-          </ul>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="card-head">
-            <img src="/Icons/price.svg" alt="price">
-            <h3 class="content-heading">Affordable Prices</h3>
-          </div>
-          <ul class="card-list">
-            <li>☑️ High-quality eyewear that fits your budget</li>
-            <li>☑️ Seasonal discounts and offers</li>
-          </ul>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card">
-          <div class="card-head">
-            <img src="/Icons/trust.svg" alt="trust">
-            <h3 class="content-heading">Trust by Thousands</h3>
-          </div>
-          <ul class="card-list">
-            <li>☑️ 1,000+ happy customers trust Royal Opticals</li>
-            <li>☑️ Reliable service and long-term satisfaction</li>
-          </ul>
-        </div>
-
+        <!--& Cards will be rendered here by JavaScript -->
       </div>
-
     </section>
+
+    <!--~ CUSTOMERS REVIEWS SECTION -->
+    <section class="section customer-reviews">
+      <h1 class="main-heading">Customers Reviews</h1>
+      <!--& CAROUSEL FOR CUSTOMER REVIEWS -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <!--& CAROUSEL INDICATORS -->
+        <div class="carousel-indicators">
+          <!--? BUTTON 1 -->
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <!--? BUTTON 2 -->
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <!--? BUTTON 3 -->
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <!--& CAROUSEL ITEMS -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="review">"Repairing Service Bhi bahut achchi hai."</h2>
+            <p class="reviewer">- Ayush Pandey</p>
+          </div>
+          <div class="carousel-item">
+            <h2 class="review">"Lens Ki Quality Bahut Achchi Hai."</h2>
+            <p class="reviewer">- Lalchand Sahu</p>
+          </div>
+          <div class="carousel-item">
+            <h2 class="review">"Yaha ke Frames Badhiya Lage Mujhe."</h2>
+            <p class="reviewer">- Sahil Khan</p>
+          </div>
+        </div>
+
+        <!--& CAROUSEL CONTROLS -->
+        <!--~ FILHAAL KE LIYE NAHI RAKHNA INHE  -->
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+    </section>
+
   </main>
 
-  <footer></footer>
-  <script type="module" src="./src/scirpts/main.js" defer></script>
+  <footer>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./src/scripts/main.js" defer></script>
 </body>
 
 </html>

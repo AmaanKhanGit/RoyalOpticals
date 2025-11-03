@@ -10,7 +10,7 @@ export function renderHeader() {
                 <li><a href="">About Us</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
-            <img class="menuBar" src="/card-heads/menu.svg" alt="">
+            <img class="menuBar" src="/Icons/menu.svg" alt="">
             <ul class="navigation nav-mobile">
                 <button class="btn closeBtn">Close</button>
                 <li><a class="nav-links" href="">Home</a></li>
