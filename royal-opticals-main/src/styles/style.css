@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --mainColor: #800020;
-  --hoverColor: #5c0019;
+  --mainColor: #4a0012;
+  --hoverColor: #800020;
+  --slateColor: #2e2e2eef;
+  --lightText: #f0d0d6;
+  --hoverLight: #ff9eae;
+  --whiteText: #ffffff;
 }
 
 * {
@@ -350,6 +354,66 @@ header {
 
 .carousel-indicators {
   bottom: -50px;
+}
+
+/*~ FOOTER SECTION */
+
+footer {
+  background: var(--mainColor);
+  color: var(--whiteText);
+  padding: 3rem 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--whiteText);
+}
+
+.footer-info {
+  color: var(--lightText);
+  line-height: 1.8;
+}
+
+.footer-info p {
+  margin-bottom: 0.75rem;
+}
+
+.footer-info strong {
+  color: var(--whiteText);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links a {
+  color: var(--lightText);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--hoverLight);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #374151;
+  color: #9ca3af;
 }
 
 /*~ RESPONSIVE DESIGN */
