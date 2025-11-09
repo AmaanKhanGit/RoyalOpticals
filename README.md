@@ -1,6 +1,103 @@
-# RoyalOpticals
-# creating a website for royal opticals
-# Creating website using Vite
+# 👓 Royal Opticals  
+### Your Vision, Our Precision
 
-# For source code, open folder in VS Code
-# For offline preview, open the `dist/index.html` file directly in any browser.
+A modern, responsive, and lightweight **frontend website** for **Royal Opticals**, built using **Vite**, **HTML**, **CSS**, and **JavaScript**.  
+The website showcases shop details, services, and a contact section with a clean, professional design.
+
+---
+
+## 🌟 Features
+
+- Fully responsive modern UI  
+- Built using **Vite** for blazing-fast builds  
+- Dedicated sections: Home • About • Contact  
+- Google Maps integration for store location  
+- Smooth animations & elegant typography  
+- Works offline via the `dist/` folder
+
+---
+
+## 🧩 Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| **HTML5** | Page structure |
+| **CSS3** | Styling & layout |
+| **Vanilla JavaScript** | Interactivity |
+| **Vite** | Development & bundling |
+| **Google Material Icons** | Icons |
+
+---
+
+## 🚀 Getting Started
+
+Run this project locally using **Vite**:
+
+```bash
+# Clone this repository
+git clone https://github.com/AmaanKhanGit/RoyalOpticals.git
+
+# Navigate into the folder
+cd RoyalOpticals
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+Then open the local URL shown in your terminal
+(usually http://localhost:5173)
+
+🧱 Folder Structure
+pgsql
+Copy code
+RoyalOpticals/
+├── src/
+│   ├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   └── index.html
+├── dist/
+│   └── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+💻 Offline Preview
+Build the project:
+
+bash
+Copy code
+npm run build
+Then open:
+
+bash
+Copy code
+dist/index.html
+in your browser to view the production version offline.
+
+🌐 Live Demo
+(Add link once deployed)
+Example → royalopticals.netlify.app
+
+📸 Preview
+(Add your website screenshot here)
+Example:
+
+🧑‍💻 Author
+Amaan Khan
+Frontend Developer
+🔗 GitHub Profile
+
+🏷️ License
+This project is open-source and available under the MIT License.
+
+💖 Built with passion using Vite + Vanilla JS
+
+yaml
+Copy code
+
+---
+
+Would you like me to include **GitHub badges** (for Vite, License, or Status) at th
