@@ -1,3 +1,4 @@
+import "../styles/common.css"
 import "../styles/style.css";
 import { initMenu } from "./menuToggle";
 import { renderHeader } from "./Components/header";

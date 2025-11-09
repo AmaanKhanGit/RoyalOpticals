@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --mainColor: #800020;
+    --secondaryColor: #B33B4B;
+    --hoverColor: #5c0019;
+    --bgColor: #FDF7F8;
+    --lightText: #F5E6E8;
+    --accentColor: #D4A5AD;
+    --whiteText: #ffffff;
+    --darkText: #2D1215;
+    --light-gray: #efefef;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+}
+
+button,
+a {
+    --webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*& BUTTON STYLES */
+.btn {
+    font-size: 24px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--mainColor);
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: var(--hoverColor);
+}
+
+/*& BACK BUTTON STYLES */
+.back-btn {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+/*& HEADING & SMALL HEADING STYLES */
+.main-heading {
+    font-size: 62px;
+    margin-bottom: 40px;
+    color: var(--mainColor);
+    text-shadow: 5px 5px 5px rgba(12, 12, 12, 0.1);
+}
+
+.small-heading {
+    font-size: 24px;
+    color: var(--mainColor);
+}
+
+.content-heading {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: var(--mainColor);
+}
+
+/*& OVERLAY */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 55;
+    /** menu ke neeche nahi hona chahiye index */
+}
+
+.overlay.active {
+    display: block;
+}
+
+/*& SECTION STYLES */
+.section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+
+/*& ANIMATION FOR APPEAR EFFECT */
+
+@keyframes appear {
+    from {
+        opacity: 0.5;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.animation {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+/*& DISABLE USER SELECT & BLUE HIGHLIGHT */
+* {
+    -webkit-tap-highlight-color: transparent;
+    /* Chrome, Safari, Android */
+    outline: none;
+    /* focus outline remove */
+    -webkit-user-select: none;
+    /* text select remove */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/*~ HEADER SECTION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    z-index: 55;
+}
+
+.logo {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    color: var(--mainColor);
+    text-shadow: 3px 3px 5px rgba(12, 12, 12, 0.1);
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a,
+.nav-links {
+    font-size: 24px;
+    color: #000000;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation a:hover,
+.nav-links:hover {
+    color: var(--hoverColor);
+}
+
+.navigation a::after,
+.nav-links::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--mainColor);
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation a:hover::after,
+.nav-links:hover::after {
+    width: 100%;
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+    z-index: 99;
+}
+
+.nav-mobile.active {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+.closeBtn {
+    align-self: flex-end;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.menuBar {
+    display: none;
+    cursor: pointer;
+}
+
+
+/*~ FOOTER SECTION */
+
+footer {
+    background: var(--mainColor);
+    color: var(--whiteText);
+    padding: 3rem 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--accentColor);
+}
+
+.footer-info {
+    color: var(--lightText);
+    line-height: 1.8;
+}
+
+.footer-info p {
+    margin-bottom: 0.75rem;
+}
+
+.footer-info strong {
+    color: var(--accentColor);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links a {
+    color: var(--lightText);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accentColor);
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--accentColor);
+    color: var(--lightText);
+}
+
+/*~ RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    header {
+        padding: 10px 30px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .navigation a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 780px) {
+    header {
+        padding: 10px 30px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menuBar {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .small-heading {
+        font-size: 20px;
+    }
+
+    .main-heading {
+        font-size: 44px;
+    }
+
+    .back-btn{
+        top: 70px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 660px) {
+    .section {
+        padding: 60px 30px;
+    }
+
+    .content-heading {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .section {
+        padding: 60px 30px;
+    }
+
+    .hero {
+        padding: 80px 10px 30px;
+    }
+
+    .small-content {
+        font-size: 24px;
+    }
+
+    .nav-mobile {
+        width: 50%;
+    }
+}

@@ -24,11 +24,11 @@ const brandsData = [
     //     name: "Zeiss",
     //     imageUrl: "/Images/Brands/zeiss.png",
     // },
-    // {
-    //     id: 6,
-    //     name: "Velocity",
-    //     imageUrl: "/Images/Brands/velocity.png",
-    // },
+    {
+        id: 6,
+        name: "Velocity",
+        imageUrl: "/Images/Brands/velocity.png",
+    },
     // {
     //     id: 7,
     //     name: "Crizal",

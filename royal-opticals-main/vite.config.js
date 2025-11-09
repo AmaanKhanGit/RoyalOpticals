@@ -15,9 +15,10 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                // Agar future me aur pages add karo to yahan likh dena:
-                // about: resolve(__dirname, 'about.html'),
-                // contact: resolve(__dirname, 'contact.html'),
+                products: resolve(__dirname, 'products.html'),
+                services: resolve(__dirname, 'services.html'),
+                about: resolve(__dirname, 'about.html'),
+                contact: resolve(__dirname, 'contact.html'),
             }
         }
     }

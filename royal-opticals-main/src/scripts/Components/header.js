@@ -5,18 +5,18 @@ export function renderHeader() {
         </div>
         <nav class="nav-cont">
             <ul class="navigation">
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
             <img class="menuBar" src="/Icons/menu.svg" alt="">
             <ul class="navigation nav-mobile">
                 <button class="btn closeBtn">Close</button>
-                <li><a class="nav-links" href="">Home</a></li>
-                <li><a class="nav-links" href="">Products</a></li>
-                <li><a class="nav-links" href="">About Us</a></li>
-                <li><a class="nav-links" href="">Contact Us</a></li>
+                <li><a class="nav-links" href="index.html">Home</a></li>
+                <li><a class="nav-links" href="products.html">Products</a></li>
+                <li><a class="nav-links" href="about.html">About Us</a></li>
+                <li><a class="nav-links" href="contact-us.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="overlay"></div>
