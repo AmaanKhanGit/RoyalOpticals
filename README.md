@@ -77,27 +77,16 @@ Copy code
 dist/index.html
 in your browser to view the production version offline.
 
-🌐 Live Demo
-(Add link once deployed)
-Example → royalopticals.netlify.app
+#🌐 Live Demo
+#Example → soon
 
-📸 Preview
-(Add your website screenshot here)
-Example:
 
-🧑‍💻 Author
-Amaan Khan
-Frontend Developer
-🔗 GitHub Profile
+#🧑‍💻 Author
+-Amaan Khan
+-Frontend Developer
+-🔗 GitHub Profile
 
-🏷️ License
-This project is open-source and available under the MIT License.
+#🏷️ License
+-This project is open-source but dont try to copy it.
 
 💖 Built with passion using Vite + Vanilla JS
-
-yaml
-Copy code
-
----
-
-Would you like me to include **GitHub badges** (for Vite, License, or Status) at th
