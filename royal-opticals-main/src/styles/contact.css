@@ -84,6 +84,12 @@ strong {
     color: var(--whiteText);
 }
 
+.faq-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .faq-questions {
     font-size: 1.2rem;
     color: var(--whiteText);
@@ -92,10 +98,6 @@ strong {
 #faqSection .faq-answer {
     font-weight: 600;
     color: var(--lightText);
-}
-
-#faqSection .main-heading {
-    margin-bottom: 0px;
 }
 
 /*~ RESPONSIVE DESIGN */
