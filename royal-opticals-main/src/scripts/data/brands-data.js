@@ -24,21 +24,21 @@ const brandsData = [
     //     name: "Zeiss",
     //     imageUrl: "/Images/Brands/zeiss.png",
     // },
-    {
-        id: 6,
-        name: "Velocity",
-        imageUrl: "/Images/Brands/velocity.png",
-    },
+    // {
+    //     id: 6,
+    //     name: "Velocity",
+    //     imageUrl: "/Images/Brands/velocity.png",
+    // },
     // {
     //     id: 7,
     //     name: "Crizal",
     //     imageUrl: "/Images/Brands/crizal.png",
     // },
-    // {
-    //     id: 8,
-    //     name: "Kodak",
-    //     imageUrl: "/Images/Brands/kodak.png",
-    // }
+    {
+        id: 8,
+        name: "Kodak",
+        imageUrl: "/Images/Brands/kodak.png",
+    }
 ];
 
 export { brandsData };
