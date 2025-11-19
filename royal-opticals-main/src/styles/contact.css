@@ -21,7 +21,7 @@ body {
     border-radius: 16px;
     padding: 2rem;
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -30,29 +30,12 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-#contactSection {
-    background: #fff;
-    color: var(--darkText);
-}
 
-#contactSection .main-heading {
+.main-heading {
     color: var(--mainColor);
+    margin-bottom: 1rem;
 }
 
-#contactSection i {
-    font-size: 2.5rem;
-    color: var(--mainColor);
-    margin-right: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-i:hover {
-    color: var(--hoverColor);
-    transform: translateY(-10px);
-}
-
-/*~ REACH SECTION */
 .contact-content {
     margin-bottom: 1.5rem;
 }
@@ -68,36 +51,26 @@ strong {
 }
 
 .social-links {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    place-items: center;
     margin-top: 1rem;
-    flex-wrap: wrap;
 }
 
-/*~ FAQ SECTION */
-#faqSection {
-    background-color: var(--mainColor);
-    color: var(--whiteText);
+.social-links i {
+    font-size: 7rem;
+    color: var(--mainColor);
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-#faqSection .main-heading {
-    color: var(--whiteText);
-}
-
-.faq-cont{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.faq-questions {
+main p {
     font-size: 1.2rem;
-    color: var(--whiteText);
 }
 
-#faqSection .faq-answer {
-    font-weight: 600;
-    color: var(--lightText);
+main strong {
+    font-size: 1.5rem;
 }
 
 /*~ RESPONSIVE DESIGN */
@@ -105,5 +78,13 @@ strong {
     .main-wrapper {
         flex-direction: column;
         align-items: center;
+    }
+
+    .social-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social-links i {
+        font-size: 6rem;
     }
 }

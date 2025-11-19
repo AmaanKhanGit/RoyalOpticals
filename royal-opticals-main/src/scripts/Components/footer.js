@@ -7,6 +7,7 @@ export function renderFooter() {
           <p><strong>Address:</strong> Civil Line Road, Ekta Chowk, Kawardha </p>
           <p><strong>Phone:</strong> +91 98765 43210</p>
           <p><strong>Email:</strong> info@royalopticals.com</p>
+          <p><strong><a href="FAQ.html"  style="color: var(--accentColor);">FAQs</a></strong></p>
           <p><strong>View </strong><a href="contact-us.html" style="color: var(--accentColor);">more..</a></p>
         </div>
       </div>
