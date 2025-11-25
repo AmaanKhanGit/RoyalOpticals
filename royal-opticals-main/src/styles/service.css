@@ -10,6 +10,13 @@ main p {
 
 /*~ Services Section Styles*/
 
+.service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 20px;
+}
+
 .services-title {
     text-align: center;
     margin-bottom: 40px;

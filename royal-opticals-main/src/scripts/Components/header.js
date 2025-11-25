@@ -13,7 +13,8 @@ export function renderHeader() {
             </ul>
             <img class="menuBar" src="/Icons/menu.svg" alt="Open menu">
             <ul class="navigation nav-mobile">
-                <button class="btn closeBtn">Close</button>
+                <h1 class="logo">Royal Opticals</h1>
+                <button type="button" class="btn-close closeBtn" aria-label="Close"></button>
                 <li><a class="nav-links" href="index.html">Home</a></li>
                 <li><a class="nav-links" href="products.html">Products</a></li>
                 <li><a class="nav-links" href="services.html">Services</a></li>

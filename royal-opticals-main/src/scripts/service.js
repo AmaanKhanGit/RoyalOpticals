@@ -16,16 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
         footerElement.innerHTML = renderFooter();
     }
 
-    /*
-      Active nav highlighting for Services page
-      This block marks the current page's nav link with `.active` and adds
-      `aria-current="page"` for accessibility.
+    //? Active nav highlighting for Services page
 
-      To reuse on other pages (about, products) copy this snippet into their
-      respective JS entry files (e.g., `src/scripts/about.js`) --- keep the
-      selector `header nav a` so it targets the header markup produced by
-      `renderHeader()`.
-    */
     (function markActiveNavForServices() {
         try {
             const pathParts = window.location.pathname.split('/').filter(Boolean);
@@ -47,4 +39,21 @@ document.addEventListener("DOMContentLoaded", () => {
             console.warn('Failed to mark active nav links (services)', e);
         }
     })();
+
+    //? Lazy loading images with Intersection Observer
+    const lazyImages = document.querySelectorAll('.lazy-img');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.onload = () => img.classList.add("lazy-loaded");
+                observer.unobserve(img);
+            }
+        });
+    });
+
+    lazyImages.forEach(img => observer.observe(img));
+
 })

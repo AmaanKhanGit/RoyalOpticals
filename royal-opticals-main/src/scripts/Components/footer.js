@@ -27,7 +27,7 @@ export function renderFooter() {
           <p>Tell us about your experience.</p>
           <!-- Standard form submit (mailto): opens user's email client with form data. No JS handling. -->
             <form class="review-form" id="reviewForm">
-              <textarea name="message" class="review-input" placeholder="Write your review here..." rows="4" maxlength="500" required></textarea>
+              <textarea name="message" class="review-input" placeholder="Write your review here..." rows="2" maxlength="500" required></textarea>
               <button type="submit" class="review-btn">Submit Review</button>
             </form>
         </div>
