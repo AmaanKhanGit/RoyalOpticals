@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/Icons/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css">
     <title>Royal Opticals | Services</title>
 </head>
 
@@ -16,17 +17,14 @@
     <main>
         <!--~ SERVICE SECTION -->
         <section class="services-section section">
-            <img class="back-btn" onclick="history.back()" src="/Icons/back-arrow.svg" alt="back-arrow">
-            <div class="services-title">
-                <h1 class="main-heading">Our Services</h1>
-                <p class="small-heading">Comprehensive eye care and stylish eyewear — precision, comfort, and style.
-                </p>
-            </div>
+
+            <!-- <img class="back-btn" onclick="history.back()" src="/Icons/back-arrow.svg" alt="back-arrow"> -->
+
             <div class="service-container">
                 <!--^ 1. Comprehensive Eye Check-Up (Image Left / Text Right) -->
                 <div class="service-row">
                     <div class="service-image">
-                        <img src="/Images/Service/eye-test-machine.jpg" alt="Digital Eye Testing">
+                        <img class="lazy-img" data-src="/Images/Service/eye-test-machine.jpg" alt="Digital Eye Testing">
                     </div>
                     <div class="service-text">
                         <h2 class="content-heading">Comprehensive Eye Examine</h2>
@@ -46,7 +44,8 @@
                 <!--^ 2. Prescription Glasses (Text Left / Image Right) -->
                 <div class="service-row reverse">
                     <div class="service-image">
-                        <img src="/Images/Service/glasses-display-shelf.jpg" alt="Prescription Glasses Display">
+                        <img class="lazy-img" data-src="/Images/Service/glasses-display-shelf.jpg"
+                            alt="Prescription Glasses Display">
                     </div>
                     <div class="service-text">
                         <h2 class="content-heading">Prescription Glasses</h2>
@@ -65,7 +64,8 @@
                 <!--^ 3. Sunglasses Collection (Image Left / Text Right) -->
                 <div class="service-row ">
                     <div class="service-image">
-                        <img src="/Images/Service/sunglasses-showcase.jpg" alt="Stylish Sunglasses">
+                        <img class="lazy-img" data-src="/Images/Service/sunglasses-showcase.jpg"
+                            alt="Stylish Sunglasses">
                     </div>
                     <div class="service-text">
                         <h2 class="content-heading">Sunglasses Collection</h2>
@@ -83,7 +83,7 @@
                 <!--^ 4. Frame Fitting & Adjustment (Text Left / Image Right) -->
                 <div class="service-row reverse ">
                     <div class="service-image">
-                        <img src="/Images/Service/frame-fitting.jpg" alt="Frame Adjustment">
+                        <img class="lazy-img" data-src="/Images/Service/frame-fitting.jpg" alt="Frame Adjustment">
                     </div>
                     <div class="service-text">
                         <h2 class="content-heading">Frame Fitting & Adjustment</h2>
@@ -105,6 +105,7 @@
         <!-- ~ Footer will be rendered here by JavaScript -->
     </footer>
 
+    <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="src/scripts/service.js" type="module" defer></script>
 </body>
 
