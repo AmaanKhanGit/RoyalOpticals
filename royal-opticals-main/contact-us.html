@@ -6,6 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/Icons/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/3c5b3b4f91.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css">
   <title>Royal Opticals | Contact Us</title>
 </head>
 
@@ -15,38 +16,68 @@
     <!--& Header will be rendered here by JavaScript -->
   </header>
 
+  <main class="contact-wrapper">
 
-  <main class="main-wrapper">
-    <img class="back-btn" onclick="history.back()" src="/Icons/back-arrow.svg" alt="back-arrow">
+    <!-- <img class="back-btn" onclick="history.back()" src="/Icons/back-arrow.svg" alt="back-arrow"> -->
 
-    <!--~REACH SECTION -->
-    <section class="contact-section" id="left">
-      <div class="contact-content" id="follow-part">
-        <h1 class="main-heading">Contact Us</h1>
-        <p><strong>Phone:</strong> +123 456 789</p>
-        <p><strong>Email:</strong> info@royalopticals.com</p>
-        <div class="social-links">
+    <section class="contact-card cards">
+
+      <h1 class="contact-title">Contact Us</h1>
+      <p class="contact-subtitle">We’re here to help and answer your queries.</p>
+
+      <div class="info-list">
+        <div class="info-row">
+          <i class="fa-solid fa-phone"></i>
+          <span><strong>Phone:</strong> +123 456 789</span>
+        </div>
+
+        <div class="info-row">
+          <i class="fa-solid fa-envelope"></i>
+          <span><strong>Email:</strong> info@royalopticals.com</span>
+        </div>
+
+        <div class="info-row">
+          <i class="fa-solid fa-location-dot"></i>
+          <span><strong>Address:</strong> Shop No -1, Civil Line Road, Ekta Chowk, Kawardha</span>
+        </div>
+
+        <div class="info-row">
+          <i class="fa-solid fa-clock"></i>
+          <span><strong>Working Hours:</strong> Mon–Sun, 10:00 AM - 9:00 PM</span>
+        </div>
+      </div>
+
+      <div class="social-section">
+        <h3>Follow us</h3>
+
+        <div class="social-icons">
           <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
     </section>
-    <section class="contact-section" id="right">
-      <div class="right-content" id="rightContent">
-        <h1 class="main-heading">Reach Us</h1>
-        <p><strong>Address:</strong> Shop No -1, Civil Line Road, Ekta Chowk, Kawardha </p>
-        <p><strong>Working Hours:</strong> Mon-Sun: 10:00 AM - 9:00 PM </p>
-      </div>
+
+    <section class="map-card cards">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.130369100572!2d81.2316393!3d22.0063152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a29c13326928deb%3A0xc9a027270140ff0c!2sRoyal%20Opticals!5e0!3m2!1sen!2sin!4v1762646644948!5m2!1sen!2sin"
-        width="100%" height="250"
-        style="border:0; border-radius:12px; margin-top:1rem; box-shadow:0 4px 10px rgba(0,0,0,0.1);" allowfullscreen=""
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
+
+      <div class="quick-info">
+        <span>🅿 Parking Available</span>
+        <span>💳 UPI Accepted</span>
+        <span>🛠 Repairs Available</span>
+      </div>
+
+      <!-- GET DIRECTION BUTTON -->
+      <a class="direction-btn" href="https://www.google.com/maps/dir/?api=1&destination=Royal+Opticals+Kawardha"
+        target="_blank">
+        Get Directions <i class="fa-solid fa-arrow-right-long"></i>
+      </a>
     </section>
+
 
   </main>
 
@@ -55,6 +86,8 @@
   <footer id="footer">
     <!--& Footer will be rendered here by JavaScript -->
   </footer>
+
+  <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="src/scripts/contact.js" type="module" defer></script>
 </body>
 
