@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 :root {
     --mainColor: #800020;
     --secondaryColor: #B33B4B;
@@ -102,6 +100,9 @@ li {
 /*& SECTION STYLES */
 .section {
     padding: 80px 60px;
+}
+
+.homepage .section {
     text-align: center;
 }
 
@@ -153,10 +154,17 @@ header {
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
     overflow-x: hidden;
     z-index: 55;
+    /* Make header typography consistent across pages (override page-level body fonts) */
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .logo {
-    font-family: "Edu NSW ACT Cursive", cursive;
+    /* Brand mark — fixed font and size so header looks the same across pages */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 600;
+    /* explicit default — overridden by media queries on small screens */
     color: var(--mainColor);
     text-shadow: 3px 3px 5px rgba(12, 12, 12, 0.1);
 }
@@ -194,6 +202,21 @@ header {
 .navigation a:hover::after,
 .nav-links:hover::after {
     width: 100%;
+}
+
+.navigation a.active {
+    color: var(--mainColor);
+}
+
+.navigation a.active::after {
+    width: 100%;
+    background-color: var(--mainColor);
+}
+
+.nav-links.active {
+    color: var(--mainColor);
+    font-weight: 700;
+    border-bottom: 2px solid var(--mainColor);
 }
 
 .nav-mobile {
@@ -283,6 +306,72 @@ footer {
     transform: translateX(5px);
 }
 
+/*~ REVIEW FORM STYLES */
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.review-input-text {
+    padding: 0.7rem;
+    border: 1px solid var(--accentColor);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--darkText);
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.review-input-text::placeholder {
+    color: rgba(45, 18, 21, 0.5);
+}
+
+.review-input-text:focus {
+    outline: none;
+    border-color: var(--secondaryColor);
+    box-shadow: 0 0 0 3px rgba(179, 59, 75, 0.1);
+}
+
+.review-input {
+    padding: 0.75rem;
+    border: 1px solid var(--accentColor);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--darkText);
+    font-family: inherit;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.review-input::placeholder {
+    color: rgba(45, 18, 21, 0.5);
+}
+
+.review-input:focus {
+    outline: none;
+    border-color: var(--secondaryColor);
+    box-shadow: 0 0 0 3px rgba(179, 59, 75, 0.1);
+}
+
+.review-btn {
+    padding: 0.7rem 1.5rem;
+    background-color: var(--secondaryColor);
+    color: var(--whiteText);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.review-btn:hover {
+    background-color: var(--accentColor);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
@@ -337,7 +426,7 @@ footer {
         font-size: 44px;
     }
 
-    .back-btn{
+    .back-btn {
         top: 70px;
         left: 10px;
     }

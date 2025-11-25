@@ -11,7 +11,7 @@ export function renderHeader() {
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-            <img class="menuBar" src="/Icons/menu.svg" alt="">
+            <img class="menuBar" src="/Icons/menu.svg" alt="Open menu">
             <ul class="navigation nav-mobile">
                 <button class="btn closeBtn">Close</button>
                 <li><a class="nav-links" href="index.html">Home</a></li>

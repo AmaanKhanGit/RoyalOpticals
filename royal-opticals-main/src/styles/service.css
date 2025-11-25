@@ -1,0 +1,150 @@
+/*~SERVICE STYLE */
+main {
+    background-color: var(--light-gray);
+}
+
+main p {
+    margin-bottom: 15px;
+    color: var(--darkText);
+}
+
+/*~ Services Section Styles*/
+
+.services-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-heading {
+    letter-spacing: -0.5px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.main-heading::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 120px;
+    background: var(--mainColor);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.services-title .content-heading {
+    color: var(--darkText);
+    max-width: 720px;
+    margin: 12px auto 0;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/*~ Row Layout for Services */
+.service-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--whiteText);
+    /* Clean white background for visibility */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(45, 18, 21, 0.08);
+    /* Darker shadow from darkText */
+    /* Subtle border for definition */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(45, 18, 21, 0.15);
+    /* More pronounced shadow on hover */
+}
+
+.service-image {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.service-image img:hover {
+    transform: scale(1.0365);
+}
+
+.service-text {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.small-heading {
+    font-weight: 700;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+/*~ RESPONSIVE STYLES */
+@media (min-width: 768px) {
+    .service-row {
+        flex-direction: row;
+        gap: 40px;
+        text-align: left;
+    }
+
+
+    .service-row.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .service-image {
+        margin-bottom: 0;
+    }
+
+    .service-row:not(.reverse) .service-text {
+        padding-left: 15px;
+    }
+
+    .service-row.reverse .service-text {
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 580px) {
+    .small-heading {
+        display: none;
+    }
+
+    .content-heading {
+        font-size: 1.2rem;
+    }
+
+    .service-list {
+        font-size: 1.12rem;
+    }
+}

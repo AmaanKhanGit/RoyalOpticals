@@ -7,7 +7,6 @@ export function renderFooter() {
           <p><strong>Address:</strong> Civil Line Road, Ekta Chowk, Kawardha </p>
           <p><strong>Phone:</strong> +91 98765 43210</p>
           <p><strong>Email:</strong> info@royalopticals.com</p>
-          <p><strong><a href="FAQ.html"  style="color: var(--accentColor);">FAQs</a></strong></p>
           <p><strong>View </strong><a href="contact-us.html" style="color: var(--accentColor);">more..</a></p>
         </div>
       </div>
@@ -19,7 +18,19 @@ export function renderFooter() {
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="FAQ.html">FAQs</a></li>
         </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Share Your Feedback</h3>
+        <div class="footer-info">
+          <p>Tell us about your experience.</p>
+          <!-- Standard form submit (mailto): opens user's email client with form data. No JS handling. -->
+            <form class="review-form" id="reviewForm">
+              <textarea name="message" class="review-input" placeholder="Write your review here..." rows="4" maxlength="500" required></textarea>
+              <button type="submit" class="review-btn">Submit Review</button>
+            </form>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
