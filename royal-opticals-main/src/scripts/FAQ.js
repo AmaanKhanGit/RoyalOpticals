@@ -1,5 +1,4 @@
 import "../styles/common.css"
-import "../styles/style.css";
 import "../styles/FAQ.css";
 import { initMenu } from './menuToggle.js';
 import { renderHeader } from './Components/header.js';

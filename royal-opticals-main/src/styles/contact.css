@@ -122,8 +122,9 @@ body {
 .direction-btn {
     display: block;
     margin-top: 1.5rem;
-    background: var(--mainColor);
-    color: #fff;
+    border: 1px solid var(--mainColor);
+    color: var(--whiteText);
+    background-color: var(--mainColor);
     text-align: center;
     padding: 0.9rem 1rem;
     border-radius: 10px;
@@ -131,12 +132,13 @@ body {
     font-weight: 600;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .direction-btn:hover {
-    background: var(--secondaryColor);
-    transform: translateY(-3px);
+    background: var(--whiteText);
+    color: var(--mainColor);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
 }
 
 .quick-info {
