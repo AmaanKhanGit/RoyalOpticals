@@ -112,32 +112,34 @@
   color: #2e2e2eef;
 }
 
-/*~ CUSTOMER REVIEWS SECTION */
+/*~ CUSTOMERS REVIEW SECTION */
 
-.customer-reviews {
+.customers-review {
   background-color: var(--hoverColor);
-  color: #fff;
-  padding: 60px 30px;
+  color: var(--whiteText);
+  position: relative;
+  min-height: 360px;
+  padding: 60px 20px;
+
+  .main-heading {
+    color: var(--whiteText);
+    text-shadow: 2px 2px 4px rgba(224, 213, 213, 0.5);
+  }
 }
 
 .review {
-  font-size: 24px;
+  font-size: 2.5rem;
   font-style: italic;
-  margin-bottom: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: center;
 }
 
-.reviewer {
-  font-size: 20px;
-  text-align: right;
-}
-
-.customer-reviews .main-heading {
-  color: #fff;
-  text-shadow: 3px 3px 5px rgba(20, 19, 19, 0.2);
-}
-
-.carousel-indicators {
-  bottom: -50px;
+.reviewer-name {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 /*~ RESPONSIVE DESIGN */
@@ -163,10 +165,22 @@
   .hero-content p {
     font-size: 1.1rem;
   }
+
+  .review {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 660px) {
   .top-brands-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviewer-name {
+    position: static;
+  }
+
+  .review {
+    font-size: 1.5rem;
   }
 }
