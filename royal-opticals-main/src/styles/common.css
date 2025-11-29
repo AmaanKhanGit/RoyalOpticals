@@ -188,7 +188,7 @@ header {
     font-size: 24px;
     color: #000000;
     position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .navigation a:hover,
@@ -205,7 +205,7 @@ header {
     height: 2px;
     width: 0;
     background-color: var(--mainColor);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .navigation a:hover::after,
