@@ -22,14 +22,15 @@ export function renderFooter() {
         </ul>
       </div>
       <div class="footer-section">
-        <h3>Share Your Feedback</h3>
+        <h3>Developeed By:</h3>
         <div class="footer-info">
-          <p>Tell us about your experience.</p>
-          <!-- Standard form submit (mailto): opens user's email client with form data. No JS handling. -->
-            <form class="review-form" id="reviewForm">
-              <textarea name="message" class="review-input" placeholder="Write your review here..." rows="2" maxlength="500" required></textarea>
-              <button type="submit" class="review-btn">Submit Review</button>
-            </form>
+          <p><strong>Name:</strong> Amaan Khan</p>
+          <p><strong>Skills:</strong> Web Development, UI/UX Design, JavaScript</p>
+          <div class="icons">
+            <a href="https://github.com/AmaanKhanGit" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/amaan-khan-036b9a32a" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/AmaanKhanX" target="_blank"><i class="bi bi-twitter-x"></i></a>
+          </div>
         </div>
       </div>
     </div>

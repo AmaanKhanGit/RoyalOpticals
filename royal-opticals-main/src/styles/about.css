@@ -8,20 +8,18 @@
     gap: 3rem;
 }
 
-/*~ Headings */
-.main-heading {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    color: var(--mainColor);
-    margin-bottom: 1rem;
-    font-weight: 800;
-    line-height: 1.2;
-}
-
-.small-heading {
-    font-size: clamp(1rem, 2.5vw, 1.35rem);
-    color: var(--secondaryColor);
-    margin-bottom: 2.5rem;
-    font-weight: 400;
+/*~ HERO SECTION OF ABOUT */
+.hero {
+    height: 50vh;
+    width: 100%;
+    background-image: url("../../public/Images/About/about-hero.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
 }
 
 /*~ Section: About Shop/Owner/Developer Layout */

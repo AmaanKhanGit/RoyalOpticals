@@ -11,10 +11,12 @@ export function renderHeader() {
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-            <img class="menuBar" src="/Icons/menu.svg" alt="Open menu">
+            <i class="bi bi-list menuBar" id="menuBar"></i>
             <ul class="navigation nav-mobile">
-                <h1 class="logo">Royal Opticals</h1>
-                <button type="button" class="btn-close closeBtn" aria-label="Close"></button>
+                <div class="mobile-header">
+                    <h1 class="logo">Royal Opticals</h1>
+                    <i class="bi bi-x-lg closeBtn" id="closeBtn"></i>
+                </div>
                 <li><a class="nav-links" href="index.html">Home</a></li>
                 <li><a class="nav-links" href="products.html">Products</a></li>
                 <li><a class="nav-links" href="services.html">Services</a></li>
