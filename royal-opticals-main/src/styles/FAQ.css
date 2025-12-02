@@ -13,6 +13,11 @@
     gap: 30px;
 }
 
+.accordion-item {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1
+    );
+}
+
 .accordion-button {
     font-weight: bold;
     font-size: 1.2rem;
@@ -26,12 +31,11 @@
 }
 
 .accordion-button:focus {
-    border-color: var(--accentColor);
+    border-color: var(--whiteText);
     box-shadow: none;
 }
 
 .accordion-button:not(.collapsed) {
-    border: 2px solid var(--accentColor);
     background-color: #fff;
     color: #000;
 }

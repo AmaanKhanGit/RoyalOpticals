@@ -17,3 +17,5 @@ const productData = [
         reviews: '', //~ number of reviews
     },
 ]
+
+export { productData };
