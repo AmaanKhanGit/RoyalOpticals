@@ -179,9 +179,16 @@ header {
     text-shadow: 3px 3px 5px rgba(12, 12, 12, 0.1);
 }
 
+.nav-cont {
+    display: flex;
+    align-items: center;
+}
+
 .navigation {
     display: flex;
     gap: 20px;
+    margin-bottom: 0;
+    align-items: center;
 }
 
 .navigation a,
@@ -273,6 +280,10 @@ header {
     display: none;
     cursor: pointer;
     font-size: 24px;
+}
+
+.wishlist-btn a {
+    color: var(--whiteText);
 }
 
 
