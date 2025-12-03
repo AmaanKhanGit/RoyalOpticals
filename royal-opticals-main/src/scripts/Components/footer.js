@@ -22,7 +22,7 @@ export function renderFooter() {
         </ul>
       </div>
       <div class="footer-section">
-        <h3>Developeed By:</h3>
+        <h3>Developed By:</h3>
         <div class="footer-info">
           <p><strong>Name:</strong> Amaan Khan</p>
           <p><strong>Skills:</strong> Web Development, UI/UX Design, JavaScript</p>
