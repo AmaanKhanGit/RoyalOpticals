@@ -12,9 +12,10 @@
 .hero {
     height: 70vh;
     width: 100%;
-    background-image: url("../../public/Images/About/about-hero.png");
+    background-image: url("/Images/About/about-hero.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -35,9 +36,10 @@
 .hero .main-heading,
 .hero .small-heading {
     color: var(--whiteText);
+    text-shadow: 2px 2px 2px rgba(214, 214, 214, 0.1);
 }
 
-/*~ Section: About Shop/Owner/Developer Layout */
+/*~ ABOUT SECTION*/
 
 .about-section {
     display: flex;
@@ -54,7 +56,7 @@
     flex-direction: row-reverse;
 }
 
-/*~ Content (Article) Styling*/
+/*& Content (Article) Styling*/
 
 .about-content {
     flex: 1;
@@ -69,7 +71,7 @@
     margin-bottom: 0.75rem;
 }
 
-/*~ List of features */
+/*& List of features */
 .about-features {
     list-style: none;
     padding-left: 0;
@@ -89,7 +91,6 @@
     border-bottom: none;
 }
 
-/*~ Custom bullet/icon using secondary color */
 .about-features li::before {
     content: "●";
     color: var(--secondaryColor);
@@ -99,7 +100,7 @@
     margin-right: 0.5rem;
 }
 
-/*~ Media (Figure/Image) Styling*/
+/*& Image Styling*/
 
 .about-media {
     flex: 1;
@@ -116,7 +117,7 @@
     transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-/* Subtle Zoom on Hover */
+/*^ Subtle Zoom on Hover */
 .about-media:hover img {
     transform: scale(1.05);
 }
@@ -147,6 +148,7 @@
     color: var(--whiteText);
     transform: translateY(-4px);
 }
+
 
 /*~ RESPONSIVE DESIGN */
 @media (max-width: 992px) {

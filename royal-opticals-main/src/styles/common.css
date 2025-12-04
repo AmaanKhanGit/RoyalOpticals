@@ -8,6 +8,7 @@
     --whiteText: #ffffff;
     --darkText: #2D1215;
     --light-gray: #efefef;
+    --dark-gray: #a5a0a0;
 }
 
 * {
@@ -34,6 +35,10 @@ a {
 
 li {
     list-style: none;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /*& BUTTON STYLES */
@@ -158,13 +163,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 80px;
+    height: 60px;
     position: sticky;
     top: 0;
     background-color: #fff;
-    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
-    overflow-x: hidden;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
     z-index: 55;
-    /* Make header typography consistent across pages (override page-level body fonts) */
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
