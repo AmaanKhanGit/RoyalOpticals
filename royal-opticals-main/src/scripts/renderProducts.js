@@ -19,7 +19,7 @@ const renderProducts = () => {
             </div>
             `
         }
-    )
+    ).join('')
 }
 
 export { renderProducts }
