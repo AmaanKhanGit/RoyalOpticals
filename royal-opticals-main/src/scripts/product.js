@@ -3,6 +3,7 @@ import "../styles/product.css";
 import { initMenu } from './menuToggle.js';
 import { renderHeader } from './Components/header.js';
 import { renderFooter } from './Components/footer.js';
+import { renderProducts } from "./renderProducts.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     const headerContainer = document.querySelector('header');
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     headerContainer.innerHTML = renderHeader();
     footerContainer.innerHTML = renderFooter();
     initMenu();
-
+    renderProducts();
     //? Active nav highlighting for Services page
 
     (function markActiveNavForProduct() {
