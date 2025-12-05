@@ -3,9 +3,9 @@ import "../styles/product.css";
 import { initMenu } from './Functions/menuToggle.js';
 import { renderHeader } from './Components/header.js';
 import { renderFooter } from './Components/footer.js';
-import { renderProducts } from "./Functions/renderProducts.js";
 import { markActiveNav } from "./Functions/activeNav.js";
-import { lazyImage } from "./Functions/lazyImage.js"
+import { handleFilter } from "./Functions/handleFilter.js";
+import { renderProducts } from "./Functions/renderProducts.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     const headerContainer = document.querySelector('header');
@@ -13,10 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
     headerContainer.innerHTML = renderHeader();
     footerContainer.innerHTML = renderFooter();
     initMenu();
-    renderProducts();
     //? Active nav highlighting for Services page
     markActiveNav();
-    //? Lazy loading images with Intersection Observer
-    lazyImage();
-
+    //? filter handler here brooo
+    renderProducts("all");
+    handleFilter();
 });

@@ -1,9 +1,17 @@
 import { productData } from "../data/product-data"
-const renderProducts = () => {
+import { lazyImage } from "./lazyImage";
+const renderProducts = (filter) => {
     const productGrid = document.querySelector(".product-grid")
-    if (!productGrid) { return }
-    productGrid.innerHTML = productData.map(
+    productGrid.innerHTML = "";
+
+    const filteredProducts = filter === "all" ? productData : productData.filter(item => item.category.toLocaleLowerCase() == filter.toLowerCase());
+
+    if (!productGrid) {
+        productGrid.innerHTML = "<p>No products found</p>"
+    }
+    productGrid.innerHTML = filteredProducts.map(
         data => {
+            console.log(data.img1)
             return `
              <div id="${data.id}" class="product-card animation">
                 <div class="product-img">
@@ -18,7 +26,8 @@ const renderProducts = () => {
             </div>
             `
         }
-    ).join('')
+    ).join('');
+    lazyImage();
 }
 
 export { renderProducts }
