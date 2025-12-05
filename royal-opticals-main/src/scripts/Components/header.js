@@ -10,6 +10,7 @@ export function renderHeader() {
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="FAQ.html">FAQs</a></li>
             </ul>
             <i class="bi bi-list menuBar" id="menuBar"></i>
             <ul class="navigation nav-mobile">
@@ -22,6 +23,7 @@ export function renderHeader() {
                 <li><a class="nav-links" href="services.html">Services</a></li>
                 <li><a class="nav-links" href="about.html">About Us</a></li>
                 <li><a class="nav-links" href="contact-us.html">Contact Us</a></li>
+                <li><a class="nav-links" href="FAQ.html">FAQs</a></li>
             </ul>
         </nav>
         <div class="overlay"></div>

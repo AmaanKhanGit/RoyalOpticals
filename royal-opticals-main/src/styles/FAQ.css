@@ -14,8 +14,8 @@
 }
 
 .accordion-item {
-    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1
-    );
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
 }
 
 .accordion-button {

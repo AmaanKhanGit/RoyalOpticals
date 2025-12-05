@@ -1,6 +1,6 @@
 import "../styles/common.css"
 import "../styles/FAQ.css";
-import { initMenu } from './menuToggle.js';
+import { initMenu } from './Functions/menuToggle.js';
 import { renderHeader } from './Components/header.js';
 import { renderFooter } from './Components/footer.js';
 
