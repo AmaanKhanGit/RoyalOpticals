@@ -52,7 +52,7 @@
 }
 
 /*~ Alternating layout for Owner section */
-#about-owner {
+.reverse {
     flex-direction: row-reverse;
 }
 
@@ -172,23 +172,12 @@
         gap: 2rem;
     }
 
-    #about-owner,
-    #about-owner.about-section {
+    .about-section {
         flex-direction: column;
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    /* Ensure content order is correct on mobile */
-    #about-owner .about-content {
-        order: 2;
-    }
-
-    #about-owner .about-media {
-        order: 1;
-    }
-
-    /* Center text elements */
     .about-content {
         padding: 1rem 0;
     }

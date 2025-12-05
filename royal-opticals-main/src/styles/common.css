@@ -244,7 +244,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 70%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -410,6 +409,7 @@ footer {
     .nav-mobile {
         display: flex;
         padding: 15px 40px;
+        width: 50vw;
     }
 
     .small-heading {
@@ -434,6 +434,10 @@ footer {
     .content-heading {
         font-size: 28px;
         margin-bottom: 15px;
+    }
+
+    .nav-mobile {
+        width: 70vw;
     }
 
     .main-heading {
