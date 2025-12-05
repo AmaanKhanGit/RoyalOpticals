@@ -197,7 +197,7 @@ header {
 
 .navigation a,
 .nav-links {
-    font-size: 24px;
+    font-size: 20px;
     color: #000000;
     position: relative;
     transition: all 0.2s ease-in-out;
@@ -236,8 +236,8 @@ header {
 
 .nav-links.active {
     color: var(--mainColor);
-    font-weight: 700;
-    border-bottom: 2px solid var(--mainColor);
+    font-weight: 600;
+    border-bottom: 1px solid var(--mainColor);
 }
 
 .nav-mobile {
@@ -263,6 +263,7 @@ header {
     transition: all 0.3s ease-in-out;
     transform: translateX(0);
 }
+
 
 .mobile-header {
     width: 100%;
@@ -388,8 +389,8 @@ footer {
         font-size: 28px;
     }
 
-    .navigation a {
-        font-size: 20px;
+    .mobile-header .logo {
+        font-size: 26px;
     }
 }
 
@@ -440,7 +441,11 @@ footer {
     }
 
     .mobile-header .logo {
-        font-size: 24px;
+        font-size: 28px;
+    }
+
+    .nav-links {
+        font-size: 20px;
     }
 }
 
@@ -449,8 +454,8 @@ footer {
         padding: 10px 20px;
     }
 
-    .logo {
-        font-size: 24px;
+    .mobile-header .logo {
+        font-size: 20px;
     }
 
     .section {
@@ -469,7 +474,8 @@ footer {
         padding: 15px 20px;
     }
 
-    .mobile-header .logo {
-        font-size: 20px;
+    .navigation a,
+    .nav-links {
+        font-size: 18px;
     }
 }
