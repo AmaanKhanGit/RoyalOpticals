@@ -42,7 +42,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -106,7 +106,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -170,7 +170,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -234,7 +234,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -298,7 +298,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -362,7 +362,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -426,7 +426,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -490,7 +490,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -554,7 +554,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -618,7 +618,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material
@@ -682,7 +682,7 @@ const productData = [
         title: 'METAL UNISEX OPTICAL FRAME', //~ product title
         price: '8,690',//~ starting from
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
+        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
         brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Metal', //~ frame material

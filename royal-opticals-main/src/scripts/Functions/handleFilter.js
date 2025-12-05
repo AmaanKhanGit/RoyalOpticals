@@ -11,6 +11,10 @@ const handleFilter = () => {
             const filterValue = e.target.value;
             console.log(filterValue)
             renderProducts(filterValue)
+            window.scrollTo({
+                top: document.querySelector('.product-grid'),
+                behavior: 'smooth'
+            });
         })
     })
 }
