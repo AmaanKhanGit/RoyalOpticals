@@ -3,6 +3,7 @@ import "../styles/FAQ.css";
 import { initMenu } from './Functions/menuToggle.js';
 import { renderHeader } from './Components/header.js';
 import { renderFooter } from './Components/footer.js';
+import { markActiveNav } from "./Functions/activeNav.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     const headerContainer = document.querySelector('header');
@@ -10,4 +11,5 @@ document.addEventListener('DOMContentLoaded', function () {
     headerContainer.innerHTML = renderHeader();
     footerContainer.innerHTML = renderFooter();
     initMenu();
+    markActiveNav();
 });
