@@ -1,4 +1,5 @@
 const productData = [
+
     {
         id: 1,
         img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
@@ -12,9 +13,7 @@ const productData = [
         brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        shape: 'Square', //~ frame shape
     },
     {
         id: 2,
@@ -30,23 +29,21 @@ const productData = [
         color: [], //~ colors available
         material: 'Metal', //~ frame material
         shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
     },
     {
         id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        img1: '/Images/Product/Sunglasses/Arista-1.png',
+        img2: '/Images/Product/Sunglasses/Arista-2.png',
+        img3: '/Images/Product/Sunglasses/Arista-3.png',
+        img4: '/Images/Product/Sunglasses/Arista-4.png',
+        title: 'Arista Sunglasses',
+        price: '10,990',
+        desc: 'The Ray-Ban RB3683 features a sleek Havana square metal frame paired with green UV-protection lenses, offering a stylish blend of premium comfort, durability, and timeless everyday eyewear style suitable for all genders.',
+        category: 'sunglasses',
+        brand: 'Ray Ban',
+        color: [],
+        material: 'Polycarbonate',
+        shape: 'Square',
     },
     {
         id: 4,
@@ -64,646 +61,1386 @@ const productData = [
         shape: 'Round', //~ frame shape
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
+        id: 5,
+        img1: '/Images/Product/Sunglasses/black-rim-ractangle-1.png',
+        img2: '/Images/Product/Sunglasses/black-rim-ractangle-2.png',
+        img3: '/Images/Product/Sunglasses/black-rim-ractangle-3.png',
+        img4: '/Images/Product/Sunglasses/black-rim-ractangle-4.png',
+        title: 'Black Full Rim Rectangle', //~ product title
+        price: '600',//~ starting from
+        desc: 'Vincent Chase VC S000170 rectangle sunglasses premium TR90 full-rim frame aur grey PC lenses ke saath aate hain, jo unisex stylish look ke saath lightweight comfort aur UV protection provide karte hain.',
         category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
+        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
         color: [], //~ colors available
         material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        shape: 'Sqaure', //~ frame shape
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 6,
+        img1: '/Images/Product/Sunglasses/RB4147-1.png',
+        img2: '/Images/Product/Sunglasses/RB4147-2.png',
+        img3: '/Images/Product/Sunglasses/RB4147-3.png',
+        img4: '/Images/Product/Sunglasses/RB4147-4.png',
+        title: 'Ray-Ban RB4147 Unisex Oversized',
+        price: '8,890',
+        desc: 'Ray-Ban RB4147 oversized square sunglasses shiny tortoise frame aur violet classic lenses ke saath bold Hollywood-style look deti hain, jo comfort, UV protection aur timeless fashion ka perfect blend hai — unisex aur prescription-friendly.',
+        category: 'sunglasses',
+        brand: 'Ray Ban',
+        color: [],
+        material: 'Polycarbonate',
+        shape: 'Square',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
+        id: 7,
+        img1: '/Images/Product/Sunglasses/RB3689-1.png',
+        img2: '/Images/Product/Sunglasses/RB3689-2.png',
+        img3: '/Images/Product/Sunglasses/RB3689-3.png',
+        img4: '/Images/Product/Sunglasses/RB3689-4.png',
+        title: 'Ray-Ban RB3689 Gunmetal Aviator Sunglasses',
+        price: '12,999',
+        desc: 'The Ray-Ban RB3689 brings a refined update to the iconic aviator style, featuring a sleek gunmetal frame, flat temples, and polarized purple classic lenses for superior clarity and reduced glare.',
+        category: 'sunglasses',
+        brand: 'Ray Ban',
+        color: [],
+        material: 'Metal',
+        shape: 'Aviator',
+    },
+    {
+        id: 8,
+        img1: '/Images/Product/Sunglasses/green-navigator-1.png',
+        img2: '/Images/Product/Sunglasses/green-navigator-2.png',
+        img3: '/Images/Product/Sunglasses/green-navigator-3.png',
+        img4: '/Images/Product/Sunglasses/green-navigator-4.png',
+        title: 'Green Navigator Sunglasses',
+        price: '1,400',
+        desc: 'These Green Navigator Sunglasses by Fastrack feature a modern design with UV-protected lenses, offering stylish everyday comfort while keeping your eyes shielded from harmful sun exposure.',
+        category: 'sunglasses',
+        brand: 'Fastrack',
+        color: [],
+        material: 'Metal',
+        shape: 'Navigator',
+    },
+    {
+        id: 9,
+        img1: '/Images/Product/Sunglasses/brown-round-1.png',
+        img2: '/Images/Product/Sunglasses/brown-round-2.png',
+        img3: '/Images/Product/Sunglasses/brown-round-3.png',
+        img4: '/Images/Product/Sunglasses/brown-round-4.png',
+        title: 'Brown Round Sunglasses',
+        price: '1,400',
+        desc: 'Brown Round Sunglasses from Tees by Fastrack bring a perfect blend of retro charm and modern style. Designed with UV-protected lenses, these shades help safeguard your eyes from harmful rays while offering a lightweight, comfortable fit and a clean everyday fashion statement.',
+        category: 'sunglasses',
+        brand: 'Fastrack',
+        color: [],
+        material: 'Metal',
+        shape: 'Round',
+    },
+    {
+        id: 10,
+        img1: '/Images/Product/Sunglasses/yellow-square-1.png',
+        img2: '/Images/Product/Sunglasses/yellow-square-2.png',
+        img3: '/Images/Product/Sunglasses/yellow-square-3.png',
+        img4: '/Images/Product/Sunglasses/yellow-square-4.png',
+        title: 'Yellow Square Sunglasses',
+        price: '1,600',
+        desc: 'Yellow Square Sunglasses from Fastrack combine bold style with everyday comfort. Designed with UV-protected lenses, these shades help shield your eyes from harmful rays while delivering a standout fashion statement that’s perfect for casual wear or outdoor adventures.',
+        category: 'sunglasses',
+        brand: 'Fastrack',
+        color: [],
+        material: 'Polycarbonate',
+        shape: 'Square',
+    },
+    {
+        id: 11,
+        img1: '/Images/Product/Sunglasses/blue-clumbster-1.png',
+        img2: '/Images/Product/Sunglasses/blue-clumbster-2.png',
+        img3: '/Images/Product/Sunglasses/blue-clumbster-3.png',
+        img4: '/Images/Product/Sunglasses/blue-clumbster-4.png',
+        title: 'Blue Clubmaster Sunglasses for Women',
+        price: '4,400',
+        desc: 'Blue Clubmaster Sunglasses from Titan Eye+ offer a timeless mix of modern elegance and retro charm. With UV-protected lenses, these shades help safeguard your eyes from harmful rays while delivering a stylish, comfortable fit — perfect for everyday wear and effortless fashion.',
+        category: 'sunglasses',
+        brand: 'Titan',
+        color: [],
+        material: 'Polycarbonate',
+        shape: 'Ractangle',
+    },
+    {
+        id: 12,
+        img1: '/Images/Product/Sunglasses/cat-eye-1.png',
+        img2: '/Images/Product/Sunglasses/cat-eye-2.png',
+        img3: '/Images/Product/Sunglasses/cat-eye-3.png',
+        img4: '/Images/Product/Sunglasses/cat-eye-4.png',
+        title: 'Purple CatEye Sunglasses for Women',
+        price: '4,400',
+        desc: 'These Titan GC296PR1FV Cat-Eye sunglasses feature a stylish metal frame paired with purple UV-protected lenses, offering a bold yet elegant look designed for all-day comfort and effortless fashion.',
+        category: 'sunglasses',
+        brand: 'Titan',
+        color: [],
+        material: 'Metal',
+        shape: 'Cat Eye',
+    },
+    {
+        id: 13,
+        img1: '/Images/Product/Sunglasses/gray-square-1.png',
+        img2: '/Images/Product/Sunglasses/gray-square-2.png',
+        img3: '/Images/Product/Sunglasses/gray-square-3.png',
+        img4: '/Images/Product/Sunglasses/gray-square-4.png',
+        title: 'Grey Square Sunglasses for Men',
+        price: '7,090',
+        desc: 'These Vogue Eyewear square-frame sunglasses feature a sleek metal construction and grey UV-protected lenses, offering modern style, clarity, and everyday comfort designed for men who prefer a refined look.',
+        category: 'sunglasses',
+        brand: 'Vogue',
+        color: [],
+        material: 'Metal',
+        shape: 'Square',
+    },
+    {
+        id: 14,
+        img1: '/Images/Product/Sunglasses/pink-aviator-1.png',
+        img2: '/Images/Product/Sunglasses/pink-aviator-2.png',
+        img3: '/Images/Product/Sunglasses/pink-aviator-3.png',
+        img4: '/Images/Product/Sunglasses/pink-aviator-4.png',
+        title: 'Pink Aviator Sunglasses for Women',
+        price: '3,690',
+        desc: 'These Vogue Eyewear Aviator sunglasses for women feature a sleek metal frame paired with pink UV-protected lenses, offering a stylish blend of elegance, comfort, and everyday eye protection.',
+        category: 'sunglasses',
+        brand: 'Vogue',
+        color: [],
+        material: 'Metal',
+        shape: 'Aviator',
+    },
+    {
+        id: 15,
+        img1: '/Images/Product/Sunglasses/gray-cat-eye-1.png',
+        img2: '/Images/Product/Sunglasses/gray-cat-eye-2.png',
+        img3: '/Images/Product/Sunglasses/gray-cat-eye-3.png',
+        img4: '/Images/Product/Sunglasses/gray-cat-eye-4.png',
+        title: 'Grey CatEye Sunglasses for Women',
+        price: '7,690',
+        desc: 'Black Cat-Eye Sunglasses from Titan Eye+ bring a bold, feminine touch with a stylish silhouette designed to stand out. Featuring UV-protected lenses, these shades help shield your eyes from harmful rays while delivering comfort, durability, and effortless everyday style.',
+        category: 'sunglasses',
+        brand: 'Vogue',
+        color: [],
+        material: 'Metal',
+        shape: 'Cat Eye',
+    },
+    {
+        id: 16,
+        img1: '/Images/Product/Sunglasses/brown-butterfly-1.png',
+        img2: '/Images/Product/Sunglasses/brown-butterfly-2.png',
+        img3: '/Images/Product/Sunglasses/brown-butterfly-3.png',
+        img4: '/Images/Product/Sunglasses/brown-butterfly-4.png',
+        title: 'Brown Butterfly Sunglasses for Women',
+        price: '4,590',
+        desc: 'Cat-Eye Sunglasses from Titan Eye+ combine classic elegance with modern style. Featuring UV-protected lenses, these shades offer superior eye protection, comfortable wear, and a chic look perfect for everyday fashion.',
+        category: 'sunglasses',
+        brand: 'Vogue',
+        color: [],
+        material: 'Metal',
+        shape: 'Cat Eye',
+    },
+    {
+        id: 21,
+        img1: '/Images/Product/Eyeglasses/metal-unisex-1.png',
+        img2: '/Images/Product/Eyeglasses/metal-unisex-2.png',
+        img3: '/Images/Product/Eyeglasses/metal-unisex-3.png',
+        img4: '/Images/Product/Eyeglasses/metal-unisex-4.png',
+        title: 'METAL UNISEX OPTICAL FRAME',
+        price: '5,690',
         desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        category: 'eyeglasses',
+        brand: 'Ray Ban',
+        color: [],
+        material: 'Metal',
+        shape: 'Geometric',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 22,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 23,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 24,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        id: 25,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 26,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 27,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 28,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        id: 29,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 30,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 31,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 32,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        id: 33,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 34,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 35,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 36,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        id: 37,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 38,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 39,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 40,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'eyeglasses',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        id: 41,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 42,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 43,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 44,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        id: 45,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 46,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 47,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 48,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        id: 49,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 50,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 51,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 52,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        id: 53,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 54,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 1,
-        img1: '/Images/Product/Sunglasses/green-wayfarer-1.png',
-        img2: '/Images/Product/Sunglasses/green-wayfarer-2.png',
-        img3: '/Images/Product/Sunglasses/green-wayfarer-3.png',
-        img4: '/Images/Product/Sunglasses/green-wayfarer-4.png',
-        title: 'Green Wayfarer Sunglasses for Men and Women', //~ product title
-        price: '1,400',//~ starting from
-        desc: 'Green Wayfarer Sunglasses from Fastrack. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (P357BK1).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Polycarbonate', //~ frame material
-        shape: '', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 55,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 2,
-        img1: '/Images/Product/Sunglasses/gray-geomatric-1.png',
-        img2: '/Images/Product/Sunglasses/gray-geomatric-2.png',
-        img3: '/Images/Product/Sunglasses/gray-geomatric-3.png',
-        img4: '/Images/Product/Sunglasses/gray-geomatric-4.png',
-        title: 'Grey Geometric Sunglasses for Women', //~ product title
-        price: '2,200',//~ starting from
-        desc: 'Round Sunglasses from Titan Eye+. Shades are designed to save your eyes from harmful UV rays while providing best in class style. (M273GY1V).',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Fastrack', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
-        rating: '', //~ out of 5
-        reviews: '', //~ number of reviews
+        id: 56,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 3,
-        img1: '/Images/Product/Sunglasses/metal-unisex-1.png',
-        img2: '/Images/Product/Sunglasses/metal-unisex-2.png',
-        img3: '/Images/Product/Sunglasses/metal-unisex-3.png',
-        img4: '/Images/Product/Sunglasses/metal-unisex-4.png',
-        title: 'METAL UNISEX OPTICAL FRAME', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A sleek gunmetal pillow-shaped unisex metal frame, designed with standard metal nosepads for comfortable everyday wear. Comes with demo lenses and a durable full-metal build for a premium look.',
-        category: 'eyeglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Geometric', //~ frame shape
+        id: 57,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
     {
-        id: 4,
-        img1: '/Images/Product/Sunglasses/round-metal-1.png',
-        img2: '/Images/Product/Sunglasses/round-metal-2.png',
-        img3: '/Images/Product/Sunglasses/round-metal-3.png',
-        img4: '/Images/Product/Sunglasses/round-metal-4.png',
-        title: 'Ray-Ban Round Metal', //~ product title
-        price: '8,690',//~ starting from
-        desc: 'A timeless round metal design in legend gold paired with G-15 green glass lenses for clear vision, UV protection, and effortless vintage style.',
-        category: 'sunglasses', //~ Eyeglasses, Sunglasses, Mens , womens, kids , blue-light,
-        brand: 'Ray Ban', //~ Ray-Ban, Kodak , Titan , Vouge , Fastrack`
-        color: [], //~ colors available
-        material: 'Metal', //~ frame material
-        shape: 'Round', //~ frame shape
+        id: 58,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 59,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 60,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'blue-cut',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 61,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 62,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 63,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 64,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 65,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 66,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 67,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 68,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 69,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 70,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 71,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 72,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 73,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 74,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 75,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 76,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 77,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 78,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 79,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 80,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'frames',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 81,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 82,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 83,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 84,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 85,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 86,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 87,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 88,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 89,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 90,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 91,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 92,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 93,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 94,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 95,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 96,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 97,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 98,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 99,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
+    },
+    {
+        id: 100,
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        title: '',
+        price: '',
+        desc: '',
+        category: 'customized',
+        brand: '',
+        color: [],
+        material: '',
+        shape: '',
     },
 
 ]
 
-export { productData };
+export { productData }
