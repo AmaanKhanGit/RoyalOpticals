@@ -57,6 +57,14 @@ body {
     background-color: var(--hoverColor);
 }
 
+.btn:focus,
+.btn:active,
+.btn:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
 /*& BACK BUTTON STYLES */
 .back-btn {
     position: absolute;
