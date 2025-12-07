@@ -209,3 +209,9 @@
         font-size: 16px;
     }
 }
+
+@media (max-width: 320px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
