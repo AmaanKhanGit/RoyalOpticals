@@ -24,8 +24,8 @@ export function renderFooter() {
       <div class="footer-section">
         <h3>Developed By:</h3>
         <div class="footer-info">
-          <p><strong>Name:</strong> Amaan Khan</p>
-          <p><strong>Skills:</strong> Web Development, UI/UX Design, JavaScript</p>
+          <p> Amaan Khan</p>
+          <p> Web Development, UI/UX Design, JavaScript</p>
           <div class="icons">
             <a href="https://github.com/AmaanKhanGit" target="_blank"><i class="bi bi-github"></i></a>
             <a href="https://www.linkedin.com/in/amaan-khan-036b9a32a" target="_blank"><i class="bi bi-linkedin"></i></a>

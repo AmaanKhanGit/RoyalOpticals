@@ -20,7 +20,6 @@ const renderProducts = (filter) => {
                 <div class="product-content" data-category="${data.category}">
                     <h2 class="product-title">${data.title}</h2>
                     <p class="product-brand">${data.brand}</p>
-                    <p class="product-price">Starting from ₹${data.price}</p>
                     <a class="view-btn">View Details</a>
                 </div>
             </div>
@@ -29,5 +28,7 @@ const renderProducts = (filter) => {
     ).join('');
     lazyImage();
 }
+
+//& PRICE IN CARD <p class="product-price"> ₹${data.price}</p>
 
 export { renderProducts }

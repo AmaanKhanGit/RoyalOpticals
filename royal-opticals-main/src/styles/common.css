@@ -33,6 +33,12 @@ a {
     text-decoration: none;
 }
 
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 li {
     list-style: none;
 }
