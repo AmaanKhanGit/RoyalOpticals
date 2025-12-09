@@ -18,82 +18,20 @@
         <!--~ HEADER WILL BE ADDED DYNAMICALLY -->
     </header>
     <main>
-        <section class="left">
-            <div id="carouselExampleIndicators" class="carousel slide">
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/Images/Product/Eyeglasses/black-aviator-1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/Images/Product/Eyeglasses/black-aviator-2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/Images/Product/Eyeglasses/black-aviator-3.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-
-                <div class="carousel-indicators">
-                    <img src="/Images/Product/Eyeglasses/black-aviator-1.png" data-bs-target="
-                        #carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"
-                        aria-label="Slide 1">
-                    <img type="button" src="/Images/Product/Eyeglasses/black-aviator-2.png"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
-                    <img type="button" src="/Images/Product/Eyeglasses/black-aviator-3.png"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
-                </div>
+        <div class="back-btn" onclick="window.history.back()">
+            <i class="bi bi-caret-left icon"></i>Back
+        </div>
+        <!--~ YAHA PE CHATGPT YAHA PE  -->
+        <div id="productContainer"></div>
+        <!-- Fullscreen Image Viewer Modal -->
+        <div id="imgViewer" class="viewer">
+            <span class="close-btn">&times;</span>
+            <img id="viewerImage" class="viewer-img" src="">
+            <div class="viewer-controls">
+                <span id="prevBtn" class="nav-btn">&#10094;</span>
+                <span id="nextBtn" class="nav-btn">&#10095;</span>
             </div>
-        </section>
-        <section class="right">
-
-            <!-- Product Title -->
-            <h2 id="product-title">Green Wayfarer Sunglasses for Men and Women</h2>
-
-            <!-- Short Description -->
-            <p id="product-desc" class="short-desc">
-                Green Wayfarer Sunglasses from Fastrack. Designed to protect your eyes while offering premium style.
-            </p>
-
-            <!-- Price Section -->
-            <div class="price-box">
-                <span id="product-price" class="price">₹1400</span>
-                <!-- Optional future: <span class="old-price">₹1999</span> -->
-            </div>
-
-            <hr>
-
-            <!-- Specs Table -->
-            <h3 class="spec-heading">Product Specifications</h3>
-
-            <table class="spec-table" id="product-specs">
-                <tr>
-                    <th>Brand</th>
-                    <td>Fastrack</td>
-                </tr>
-                <tr>
-                    <th>Color</th>
-                    <td>Green</td>
-                </tr>
-                <tr>
-                    <th>Frame Shape</th>
-                    <td>Wayfarer</td>
-                </tr>
-                <tr>
-                    <th>Material</th>
-                    <td>Polycarbonate</td>
-                </tr>
-                <tr>
-                    <th>Category</th>
-                    <td>Sunglasses</td>
-                </tr>
-            </table>
-
-            <!-- Buttons -->
-            <div class="btn-box">
-                <a href="contact-us.html" class="btn ">Visit shop for more</a>
-            </div>
-
-        </section>
+        </div>
 
     </main>
     <footer>

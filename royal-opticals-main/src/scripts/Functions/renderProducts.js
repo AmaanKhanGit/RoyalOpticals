@@ -11,7 +11,6 @@ const renderProducts = (filter) => {
     }
     productGrid.innerHTML = filteredProducts.map(
         data => {
-            console.log(data.img1)
             return `
              <div id="${data.id}" class="product-card animation">
                 <div class="product-img">
@@ -20,7 +19,7 @@ const renderProducts = (filter) => {
                 <div class="product-content" data-category="${data.category}">
                     <h2 class="product-title">${data.title}</h2>
                     <p class="product-brand">${data.brand}</p>
-                    <a href="singleProduct.html" class="view-btn">View Details</a>
+                    <a href="singleProduct.html?id=${data.id}" data-id="${data.id}" id="${data.id}" class="view-btn">View Details</a>
                 </div>
             </div>
             `

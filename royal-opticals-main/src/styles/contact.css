@@ -20,11 +20,6 @@ body {
     gap: 2rem;
 }
 
-.back-btn {
-    width: 40px;
-    cursor: pointer;
-    margin-bottom: 1rem;
-}
 
 /* CONTACT CARD */
 .contact-card {
@@ -140,6 +135,8 @@ body {
     background: var(--whiteText);
     color: var(--mainColor);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
+    font-size: 1.2rem;
+    padding: 0.8rem 0.9rem;
 }
 
 .quick-info {

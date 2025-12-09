@@ -28,6 +28,8 @@
 
 .filter-btn:hover {
     background-color: var(--bgColor);
+    font-size: 22px;
+    padding: 1px 8px;
 }
 
 .filter-btn.active {

@@ -29,6 +29,7 @@ main {
 #carouselExampleIndicators .carousel-item img {
     width: 100%;
     object-fit: cover;
+    cursor: pointer;
     padding: 15px;
 }
 
@@ -56,6 +57,7 @@ main {
 .carousel-indicators img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
     object-fit: contain;
     display: block;
 }
@@ -139,6 +141,72 @@ main {
     align-self: center;
 }
 
+/*~ FULL SCREEN VIEWER */
+
+.viewer {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.viewer-img {
+    max-width: 90%;
+    max-height: 90%;
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.viewer-controls .nav-btn {
+    position: absolute;
+    top: 45%;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+#prevBtn {
+    left: 50px;
+}
+
+#nextBtn {
+    right: 50px;
+}
+
+#productContainer {
+    display: flex;
+    /* ya grid, tumhare layout ke hisaab se */
+    justify-content: center;
+    /* horizontally center kare */
+    align-items: flex-start;
+    /* top align kare */
+    gap: 40px;
+    /* carousel aur details ke beech gap */
+    flex-wrap: wrap;
+    /* mobile pe wrap ho jaaye */
+    margin-top: 20px;
+    /* back button se thoda space */
+    width: 100%;
+    /* container poore width pe ho */
+    max-width: 1200px;
+    /* large screens ke liye */
+    box-sizing: border-box;
+    /* padding include kare width me */
+}
+
 
 /*~RESPONSIVE DESIGN*/
 
@@ -158,4 +226,15 @@ main {
         width: 90px;
         height: 90px;
     }
+}
+
+@media (max-width: 620px) {
+    #prevBtn {
+        left: 20px;
+    }
+
+    #nextBtn {
+        right: 20px;
+    }
+
 }
