@@ -20,7 +20,7 @@ const renderProducts = (filter) => {
                 <div class="product-content" data-category="${data.category}">
                     <h2 class="product-title">${data.title}</h2>
                     <p class="product-brand">${data.brand}</p>
-                    <a class="view-btn">View Details</a>
+                    <a href="singleProduct.html" class="view-btn">View Details</a>
                 </div>
             </div>
             `

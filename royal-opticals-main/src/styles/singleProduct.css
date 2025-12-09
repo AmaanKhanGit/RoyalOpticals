@@ -1,0 +1,161 @@
+/*~ SINGLE PRODUCT STYLING*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 30px 0;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+/*~LEFT: CAROUSEL GALLERY*/
+.left {
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+    position: relative;
+}
+
+/*^Main image */
+#carouselExampleIndicators {
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+#carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+
+/*^Thumbnails */
+.carousel-indicators {
+    position: static !important;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+.carousel-indicators img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/*~ RIGHT: PRODUCT DETAILS */
+.right {
+    flex: 1;
+    min-width: 320px;
+    max-width: 480px;
+    padding: 10px 20px;
+}
+
+#product-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.short-desc {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+/*^ Price */
+.price-box {
+    margin: 12px 0;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--mainColor);
+}
+
+/*^ Divider */
+.right hr {
+    margin: 18px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+/*~ SPECS TABLE*/
+.spec-heading {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.spec-table th {
+    width: 40%;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.spec-table td {
+    padding: 10px 0;
+    color: #444;
+    text-transform: capitalize;
+}
+
+.spec-table tr {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.btn-box {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-box {
+    align-self: center;
+}
+
+
+/*~RESPONSIVE DESIGN*/
+
+@media (max-width: 1024px) {
+    main {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 90px;
+        height: 90px;
+    }
+}
