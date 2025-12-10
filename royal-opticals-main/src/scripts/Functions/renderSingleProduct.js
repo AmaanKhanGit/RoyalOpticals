@@ -1,7 +1,4 @@
-const renderSingleProduct = (productData, id) => {
-    const filteredData = productData.find(data => data.id == id)
-
-    console.log(filteredData.img1)
+const renderSingleProduct = (filteredData) => {
 
     document.querySelector("#productContainer").innerHTML =
         `

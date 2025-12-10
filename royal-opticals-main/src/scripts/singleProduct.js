@@ -13,10 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector("footer").innerHTML = renderFooter();
     initMenu();
     markActiveNav();
-    console.log(productData)
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
-    console.log(id);
-    renderSingleProduct(productData, id)
+    const filteredData = productData.find(data => data.id == id)
+    //~ TITLE OF THE PAGE
+    document.title = `Royal Opticals | ${filteredData.title}`
+    renderSingleProduct(filteredData)
     imageViewer();
 })
