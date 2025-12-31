@@ -90,3 +90,4 @@ in your browser to view the production version offline.
 -This project is open-source but dont try to copy it.
 
 💖 Built with passion using Vite + Vanilla JS
+-Finalize: The project has been completed in 31 Dec 2025
