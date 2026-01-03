@@ -116,7 +116,7 @@
 /*~ CUSTOMERS REVIEW SECTION */
 .customers-review {
   padding: 50px 0;
-  background: var(--mainColor);
+  background: var(--hoverColor);
 }
 
 .customers-review .main-heading {
@@ -170,7 +170,7 @@
 }
 
 .review {
-  font-size: 15px;
+  font-size: 1.2rem;
   color: #555;
 }
 
@@ -212,10 +212,6 @@
   .hero-content p {
     font-size: 1.1rem;
   }
-
-  .review {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 660px) {
@@ -228,6 +224,6 @@
   }
 
   .review {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
