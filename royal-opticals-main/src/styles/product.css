@@ -143,8 +143,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--hoverColor);
-    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Images/promo-img.png') no-repeat center center/cover;
 }
 
 /*^ Banner Content */
@@ -162,34 +161,34 @@
     letter-spacing: -1px;
     margin-bottom: 16px;
     line-height: 1.2;
+    color: var(--whiteText);
 }
 
 .banner-content p {
-    font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.25rem;
+    color: var(--whiteText);
     margin-bottom: 40px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /*^ Call to Action Button */
 .btn-cta {
     display: inline-block;
     background-color: var(--mainColor);
-    color: white;
+    color: var(--whiteText);
     text-decoration: none;
     padding: 20px 48px;
     font-size: 1.1rem;
     font-weight: 600;
     border-radius: 8px;
-    box-shadow: 0 10px 25px var(--mainColor);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-cta:hover {
+    font-size: 1.2rem;
     color: #fff;
-    transform: translateY(-4px);
-    box-shadow: 0 15px 35px var(--hoverColor);
+    background-color: var(--hoverColor);
 }
 
 
