@@ -23,7 +23,4 @@ document.addEventListener("DOMContentLoaded", () => {
     if (footerElement) {
         footerElement.innerHTML = renderFooter();
     }
-
-
-
-})
+});

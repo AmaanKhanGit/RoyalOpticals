@@ -4,6 +4,7 @@ import { initMenu } from "./Functions/menuToggle";
 import { renderHeader } from "./Components/header";
 import { renderFooter } from "./Components/footer";
 import { markActiveNav } from "./Functions/activeNav";
+import { lazyImage } from "./Functions/lazyImage";
 
 document.addEventListener("DOMContentLoaded", () => {
     //initialize menu toggle
@@ -17,24 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
         footerElement.innerHTML = renderFooter();
     }
 
-    //? Active nav highlighting for Services page
+    //& Active nav highlighting 
     markActiveNav();
 
-
-    //? Lazy loading images with Intersection Observer
-    const lazyImages = document.querySelectorAll('.lazy-img');
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.onload = () => img.classList.add("lazy-loaded");
-                observer.unobserve(img);
-            }
-        });
-    });
-
-    lazyImages.forEach(img => observer.observe(img));
-
+    //& Lazy loading images 
+    lazyImage();
 })
