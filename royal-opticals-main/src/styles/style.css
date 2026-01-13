@@ -46,6 +46,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   place-items: center;
+  margin: 10px 60px;
 }
 
 .img-container {
@@ -212,11 +213,15 @@
   .hero-content p {
     font-size: 1.1rem;
   }
+
+  .top-brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 660px) {
   .top-brands-grid {
-    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 30px;
   }
 
   .reviewer-name {
